@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <main>
+      <div class="img-logo">
+        <img src="../assets/KOMOREBI.png" alt="imagen logotipo Komorebi" />
+      </div>
+      <section class="container-contact">
+        <h1>Hey There!</h1>
+        <p>
+          Tell me more here
+          <br />
+          or send me an <a href="mailto:m.bluth@example.com">Email</a>
+        </p>
+
+        <form action="">
+          <fieldset>
+            <legend>
+              <h3>Let me Know about you</h3>
+            </legend>
+
+            <div>
+              <input type="text" name="name" id="name" placeholder="Name" />
+              <input type="number" name="age" id="age" placeholder="Age" />
+            </div>
+            <div>
+              <input type="email" name="email"id="email" placeholder="Email"/>
+              <input type="tel" name="tel" id="tel" placeholder="Phone"/>
+            </div>
+
+            <div>
+              <input type="radio" id="gender" name="gender" value="male" />
+              <label for="gender">Male</label>
+
+              <input type="radio" id="gender" name="gender" value="female" />
+              <label for="gender">Female</label>
+
+              <input type="radio" id="gender" name="gender" value="other" />
+              <label for="gender">Other</label>
+
+              <br />
+
+              <input type="radio" id="gender" name="gender" value="notAnswer" />
+              <label for="gender">Prefer not to say</label>
+            </div>
+
+            <div>
+              <h4>Hobbies & Interests</h4>
+              <input type="checkbox" name="Photography" id="Photography" />
+              <label for="Photography">Photography</label>
+              <input type="checkbox" name="Music" id="Music" />
+              <label for="Music">Music</label>
+              <input type="checkbox" name="Books" id="Books" />
+              <label for="Books">Books</label>
+            </div>
+            <div>
+              <h4>What's your story</h4>
+              <textarea id="aboutYou" name="aboutYou" rows="5" cols="33"> Message </textarea>
+            </div>
+
+            <div>
+              <h4>When do you prefer I contact you</h4>
+              <label for="fecha">Select date:</label>
+              <input
+                type="date"
+                id="date"
+                name="date"
+                value="2023-05-23"
+                min="2022-01-01"
+                max="2025-12-31"
+              />
+            </div>
+            <div>
+              <label for="hora">Select hour:</label>
+              <input type="time" id="time" name="time" value="" />
+            </div>
+            <input type="submit" value="Send" />
+          </fieldset>
+        </form>
+    </section>
+
+      <section class="container-links">
+        <img
+          src="../assets/pexels-Foto de Daria Liudnaya -8187500.jpg"
+          alt="imagen de manos de mujer. Foto de Daria Liudnaya"
+        />
+
+        <ul>
+          <li><a href="home.html" target="_self">Home</a></li>
+          <li><a href="biografia.html" target="_self">Bio</a></li>
+          <li><a href="portafolio.html" target="_self">Work</a></li>
+          <li><a href="#top" id="btn" class="btnContact">Contact</button></li>
+        </ul>
+    </section>
+    </main>
+    <footer>
+
+        <!--TODO: iconos RRSS otra info -->
+
+
+    </footer>
+
+  </body>
+</html>
