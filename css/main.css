@@ -1,16 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    cursor: zoom-pointer;
+}
+
+fieldset {
+    /* TODO: 
+    bordes redondeados
+    color borde */
+    border-color: rgb(218, 218, 218);
+    border-radius: 10px;
+}
+
+/* VARIABLES USABLES  */
+
+.mb1 {
+    margin-bottom: 10px;
+}
+
+.container-logo {
+    width: 20rem;
+    margin: 1.5rem auto 5rem 1.5rem;
+    display: flex;
+    gap: 20px;
+
+}
+
+.form-intro {
+    margin: auto 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.container-contact {
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5rem;
+}
+
+.container-contact h1 {
+    font-size: 2rem;
+    color: rgb(85, 85, 85);
+}
+
+.my-form {
+    max-width: 80%;
+    margin-bottom: 20px ;
+}
+
+.campos-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.campos-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.gender-container, #aboutYou {
+    margin-bottom: 10px;
+}
 
 
+.container-links {
+    display: flex;
+    border: 3px solix red;
+}
+
+.container-links img {
+    width: 100%;
+    height: 500px;
+    object-fit: fill;
+}
 
 
-
-/* BOTON SUBIR ARRIBA */
-
+/* BOTON SUBIR ARRIBA contacto ----------------------------*/
 html {
     scroll-behavior: smooth;
 }
 
- .btnContact{
+.btnContact {}
 
+/* BOTON SUBIR ARRIBA contacto  ----------------------------*/
+
+/* TODO: revisar VIDEO INTRO INDEX ------------ */
+.embed-responsive .embed-responsive-item,
+.embed-responsive embed,
+.embed-responsive iframe,
+.embed-responsive object,
+.embed-responsive video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0
 }
 
-/* BOTON SUBIR ARRIBA */
+/* VIDEO INTRO INDEX ------------ */
+
+
+#img-logo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: #2f3a31;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+   
+  }
+  
+  .container {
+  
+    margin: 0 auto;
+  }
+  
+  .social-icons {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  
+  .rights {
+    font-size: 12px;
+  }
+  
+
+
+/* MEDIA QUERIES ----------------------------*/
+
+
+@media screen and (min-width: 481px) {
+ 
+}
+
+
+/* 769 */
+@media screen and (min-width:769px) {
+    .container-contact {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        max-width: 900px;
+        margin: 0 auto;
+        height: 100vh;
+        
+    }
+
+    .my-form {
+        width: 45%;
+    }
+
+    .container-links {
+        max-width: 100%;
+    }
+
+    .container-links img {
+        width: 100%;
+        object-fit: fill;
+       
+    }
+}
