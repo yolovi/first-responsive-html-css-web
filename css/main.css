@@ -23,18 +23,14 @@ a {
 header {
 }
 
-
-
-
 .mb1 {
     margin-bottom: 10px;
 }
 
-.container-logo {
-    width: 20rem;
-    margin: 1.5rem auto 5rem 1.5rem;
-    display: flex;
-
+.nav-logo a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 .form-intro {
@@ -78,7 +74,6 @@ header {
     margin-bottom: 10px;
 }
 
-
 .container-links {
     display: flex;
     border: 3px solix red;
@@ -98,45 +93,6 @@ header {
 
 /* NAV ------------------------*/
 
-
-
-
-/* PRUEBA NAV RESPONSIVE MOBILE */
-/* .nav-container{
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    padding: 10px 0 5px;
-    color: #ffffff;
-    background-color: #bbb6aa;
-    margin: 0 0 20px 0;
-}
-
-.navlinks a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 10px 8px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.navlinks a:hover {
-    background-color:#f2f2f2;
-    color:#536157;
-}
-
-.navlinks a.active {
-    background-color: #aba492;
-    color: white;
-
-} */
-
-/* prueba nav mini responsive */
-
-
 .nav-container{
     display: flex;
     overflow: hidden;
@@ -146,6 +102,10 @@ header {
     color: #ffffff;
     background-color: #bbb6aa;
     margin-bottom: 20px;
+    position:-webkit-sticky;
+    position:sticky;
+    top: 0px;
+
 }
 
 .navlinks {
@@ -183,26 +143,59 @@ header {
 /* NAV ------------------------*/
 
 
-/* TODO: revisar VIDEO INTRO INDEX ------------ */
-.embed-responsive .embed-responsive-item,
-.embed-responsive embed,
-.embed-responsive iframe,
-.embed-responsive object,
-.embed-responsive video {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0
-}
-
-
 
 /* VIDEO INTRO INDEX ------------ */
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+   
+    
+}
 
+.video-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 100%; /* Ancho del video */
 
+}
+
+.rotulo-index {
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-container {
+    text-align: center;
+    position: sticky;
+    top: 80%;
+    left: 35%;
+    
+}
+
+.boton-inicio {
+    background-color:transparent;
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    font-size: 35px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-inicio:hover {
+    background-color: rgba(128, 128, 128, 0.8);
+}
 
 
 /* BOTON SUBIR ARRIBA contacto ----------------------------*/
@@ -225,7 +218,7 @@ html {
 
 }
 
-.container {
+.container-footer {
     margin: 0 auto;
 }
 
@@ -248,12 +241,41 @@ html {
 /* MEDIA QUERIES ----------------------------*/
 
 @media screen and (max-width: 768px) {
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+    }
+
+    .nav-logo {
+        margin-bottom: 10px;
+    }
+
+    .navlinks {
+        display: flex;
+        
+    }
+
+    .navlinks a {
+        padding: 10px ;
+    }
+   
     .nav-container .social-icons {
+    
       display: none;
     }
   }
 
-@media screen and (min-width: 481px) {}
+@media screen and (min-width: 481px) {
+    .btn-container {
+        text-align: center;
+        position: sticky;
+        top: 80%;
+        left: 45%;
+        
+    }
+}
 
 
 /* 769 */
