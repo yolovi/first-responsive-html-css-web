@@ -4,19 +4,27 @@
     box-sizing: border-box;
 }
 
+
+/* GENERAL ------------------------*/
+
+.dark {
+    color: #ffffff;
+}
+
+.white{
+    color: #536157;
+    background-color: #ffffff;
+}
+
 a {
     cursor: zoom-pointer;
 }
 
-fieldset {
-    /* TODO: 
-    bordes redondeados
-    color borde */
-    border-color: rgb(218, 218, 218);
-    border-radius: 10px;
+header {
 }
 
-/* VARIABLES USABLES  */
+
+
 
 .mb1 {
     margin-bottom: 10px;
@@ -26,7 +34,6 @@ fieldset {
     width: 20rem;
     margin: 1.5rem auto 5rem 1.5rem;
     display: flex;
-    gap: 20px;
 
 }
 
@@ -49,7 +56,7 @@ fieldset {
 
 .my-form {
     max-width: 80%;
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
 }
 
 .campos-column {
@@ -66,7 +73,8 @@ fieldset {
     margin-bottom: 10px;
 }
 
-.gender-container, #aboutYou {
+.gender-container,
+#aboutYou {
     margin-bottom: 10px;
 }
 
@@ -82,15 +90,98 @@ fieldset {
     object-fit: fill;
 }
 
-
-/* BOTON SUBIR ARRIBA contacto ----------------------------*/
-html {
-    scroll-behavior: smooth;
+#img-logo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
 }
 
-.btnContact {}
+/* NAV ------------------------*/
 
-/* BOTON SUBIR ARRIBA contacto  ----------------------------*/
+
+
+
+/* PRUEBA NAV RESPONSIVE MOBILE */
+/* .nav-container{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0 5px;
+    color: #ffffff;
+    background-color: #bbb6aa;
+    margin: 0 0 20px 0;
+}
+
+.navlinks a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 8px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navlinks a:hover {
+    background-color:#f2f2f2;
+    color:#536157;
+}
+
+.navlinks a.active {
+    background-color: #aba492;
+    color: white;
+
+} */
+
+/* prueba nav mini responsive */
+
+
+.nav-container{
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    color: #ffffff;
+    background-color: #bbb6aa;
+    margin-bottom: 20px;
+}
+
+.navlinks {
+    background-color: #bbb6aa;
+    overflow: hidden;
+}
+
+.navlinks a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navlinks a:hover {
+    background-color:#f2f2f2;
+    color:#536157;
+}
+
+.navlinks a.active {
+    background-color: #aba492;
+    color: white;
+}
+
+.nav-container .social-icons a{
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 15px;
+    
+}
+
+/* NAV ------------------------*/
+
 
 /* TODO: revisar VIDEO INTRO INDEX ------------ */
 .embed-responsive .embed-responsive-item,
@@ -107,53 +198,62 @@ html {
     border: 0
 }
 
+
+
 /* VIDEO INTRO INDEX ------------ */
 
 
-#img-logo {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
+
+
+/* BOTON SUBIR ARRIBA contacto ----------------------------*/
+html {
+    scroll-behavior: smooth;
 }
 
+.btnContact {}
 
-/* FOOTER */
+/* BOTON SUBIR ARRIBA contacto  ----------------------------*/
+
+
+
+/* FOOTER ------------------------*/
 .footer {
-    background-color: #2f3a31;
     color: #ffffff;
+    background-color:#536157;
     padding: 20px 0;
     text-align: center;
-   
-  }
-  
-  .container {
-  
+
+}
+
+.container {
     margin: 0 auto;
-  }
-  
-  .social-icons {
+}
+
+.social-icons {
     margin-bottom: 10px;
-  }
-  
-  .social-icons a {
+}
+
+.social-icons a {
     display: inline-block;
     margin: 0 10px;
-    color: #ffffff;
     font-size: 20px;
-  }
-  
-  .rights {
+}
+
+.rights {
     font-size: 12px;
-  }
-  
+}
+
 
 
 /* MEDIA QUERIES ----------------------------*/
 
+@media screen and (max-width: 768px) {
+    .nav-container .social-icons {
+      display: none;
+    }
+  }
 
-@media screen and (min-width: 481px) {
- 
-}
+@media screen and (min-width: 481px) {}
 
 
 /* 769 */
@@ -165,7 +265,7 @@ html {
         max-width: 900px;
         margin: 0 auto;
         height: 100vh;
-        
+
     }
 
     .my-form {
@@ -179,6 +279,6 @@ html {
     .container-links img {
         width: 100%;
         object-fit: fill;
-       
+
     }
 }

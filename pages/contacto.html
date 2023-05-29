@@ -1,110 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="../css/main.css">
-  </head>
-  <body>
-    <main>
-      <div class="container-logo">
-        <a href="home.html"><img id="img-logo" src="../assets/KOMOREBI.png" alt="imagen logotipo Komorebi"/>
-        </a>
-      </div>
 
-      <div class="container-contact">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
 
-        <form class="my-form" action="" method="post">
-            <legend >
-              <h2 class="mb1">Let's talk</h2>
-            </legend>
+<body>
+
+  <header>
+  </header>
+
+  <nav class="nav-container">
+    <div class="nav-logo">
+      <h1>KOMOREBI</h1>
+    </div>
+    <div class="navlinks">
+      <a href="home.html" class="active">HOME</a>
+      <a href="biografia.html">ABOUT</a>
+      <a href="portafolio.html">WORK</a>
+      <a href="contacto.html">CONTACT</a>
+    </div>
+    <div class="social-icons">
+      <a class="dark" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+      <a class="dark" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+    </div>
+  </nav>
+
+  <main>
 
 
-            <div class="campos-column">
-              <input type="text" name="name" id="name" placeholder="Name" />
-              <input type="number" name="age" id="age" placeholder="Age" />
-              <input type="email" name="email"id="email" placeholder="Email"/>
-              <input type="tel" name="tel" id="tel" placeholder="Phone"/>
-            </div>
+    <div class="container-contact">
 
-            <div class="gender-container">
-              <select>
-                <option selected disabled>-- Gender --</option>
-                <option>Male</option>
-                <option>Female</option>
-                <option>Other</option>
-                <option>Prefer not to say</option>
-            </select>
-            </div>
+      <form class="my-form" action="" method="post">
+        <legend>
+          <h2 class="mb1">Let's talk</h2>
+        </legend>
 
-            <h4 class="mb1">Hobbies & Interests</h4>
-            <div class="campos-row">
-              <input type="checkbox" name="Photography" id="Photography" />
-              <label for="Photography">Photography</label>
-              <input type="checkbox" name="Music" id="Music" />
-              <label for="Music">Music</label>
-              <input type="checkbox" name="Books" id="Books" />
-              <label for="Books">Books</label>
-            </div>
-            <div>
-              <h4 class="mb1">What's your story</h4>
-              <textarea id="aboutYou" name="aboutYou" rows="5" cols="33"> Message </textarea>
-            </div>
 
-            <div>
-              <h4 class="mb1">When do you prefer I contact you</h4>
-              <label for="fecha">Select date:</label>
-              <input
-                type="date"
-                id="date"
-                name="date"
-                value="2023-05-23"
-                min="2022-01-01"
-                max="2025-12-31"
-              />
-            </div>
-            <div class="mb1" >
-              <label for="hora">Select hour:</label>
-              <input type="time" id="time" name="time" value="09:00" />
-            </div>
-            <div class="mb1">
-              <h4 class="mb1">Contact Preference</h4>
-              <input type="radio" id="contact" name="contact" value="email" />
-              <label for="contact">Email</label>
+        <div class="campos-column">
+          <input type="text" name="name" id="name" placeholder="Name" />
+          <input type="number" name="age" id="age" placeholder="Age" />
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <input type="tel" name="tel" id="tel" placeholder="Phone" />
+        </div>
 
-              <input type="radio" id="contact" name="contact" value="Phone" />
-              <label for="contact">Phone</label>
-          </div>
-            <input class="mb1" type="submit" value="Send" />
-     </form>
-        <div class="container-links">
-          <img class='img-form'
-            src="../assets/pexels-Foto de Daria Liudnaya -8187500.jpg"
-            alt="imagen de manos de mujer. Foto de Daria Liudnaya"
-          />
-  
-          <!-- <ul>
+        <div class="gender-container">
+          <select>
+            <option selected disabled>-- Gender --</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+            <option>Prefer not to say</option>
+          </select>
+        </div>
+
+        <h4 class="mb1">Hobbies & Interests</h4>
+        <div class="campos-row">
+          <input type="checkbox" name="Photography" id="Photography" />
+          <label for="Photography">Photography</label>
+          <input type="checkbox" name="Music" id="Music" />
+          <label for="Music">Music</label>
+          <input type="checkbox" name="Books" id="Books" />
+          <label for="Books">Books</label>
+        </div>
+        <div>
+          <h4 class="mb1">What's your story</h4>
+          <textarea id="aboutYou" name="aboutYou" rows="5" cols="33"> Message </textarea>
+        </div>
+
+        <div>
+          <h4 class="mb1">When do you prefer I contact you</h4>
+          <label for="fecha">Select date:</label>
+          <input type="date" id="date" name="date" value="2023-05-23" min="2022-01-01" max="2025-12-31" />
+        </div>
+        <div class="mb1">
+          <label for="hora">Select hour:</label>
+          <input type="time" id="time" name="time" value="09:00" />
+        </div>
+        <div class="mb1">
+          <h4 class="mb1">Contact Preference</h4>
+          <input type="radio" id="contact" name="contact" value="email" />
+          <label for="contact">Email</label>
+
+          <input type="radio" id="contact" name="contact" value="Phone" />
+          <label for="contact">Phone</label>
+        </div>
+        <input class="mb1" type="submit" value="Send" />
+      </form>
+      <div class="container-links">
+        <img class='img-form' src="../assets/pexels-Foto de Daria Liudnaya -8187500.jpg"
+          alt="imagen de manos de mujer. Foto de Daria Liudnaya" />
+
+        <!-- <ul>
             <li><a href="home.html" target="_self">Home</a></li>
             <li><a href="biografia.html" target="_self">Bio</a></li>
             <li><a href="portafolio.html" target="_self">Work</a></li>
             <li><a href="#top" id="btn" class="btnContact">Contact</button></li>
           </ul> -->
-        </div>
       </div>
+    </div>
 
 
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="social-icons">
-          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-        </div>
-        <p class="rights">Todos los derechos reservados a Yolanda López</p>
+  </main>
+  <footer class="footer dark">
+    <div class="container">
+      <div class="social-icons">
+        <a class="dark" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a class="dark" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
       </div>
-    </footer>
-  </body>
+      <p class="rights">Todos los derechos reservados a Yolanda López</p>
+    </div>
+  </footer>
+</body>
+
 </html>
