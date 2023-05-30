@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+/* FONTS GOOGLE ----------
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Source Serif Pro', serif;
+----------------------- */
 
 /* GENERAL ------------------------*/
 
@@ -11,7 +15,7 @@
     color: #ffffff;
 }
 
-.white{
+.white {
     color: #536157;
     background-color: #ffffff;
 }
@@ -20,18 +24,248 @@ a {
     cursor: zoom-pointer;
 }
 
-header {
+
+h1 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h2 {
+    font-size: 34px;
+    font-family: 'Source Serif Pro', serif;
+}
+
+h4 {
+    font-size: 26px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+p,
+label {
+    font-size: 22px;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .mb1 {
     margin-bottom: 10px;
 }
 
+/* #img-logo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+} */
+
+/* NAV ------------------------*/
 .nav-logo a {
     color: #f2f2f2;
     text-decoration: none;
     font-size: 17px;
 }
+
+.nav-container {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    color: #ffffff;
+    background-color: #bbb6aa;
+    margin-bottom: 30px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+
+}
+
+.nav-logo a {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.navlinks {
+    background-color: #bbb6aa;
+    overflow: hidden;
+}
+
+.navlinks a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navlinks a:hover {
+    background-color: #f2f2f2;
+    color: #536157;
+}
+
+.navlinks a.active {
+    background-color: #aba492;
+    color: white;
+}
+
+.nav-container .social-icons a {
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 15px;
+
+}
+
+/* NAV ------------------------*/
+
+
+/* HOME---------------- */
+.container-tex1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 20px;
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px;
+}
+
+.card {
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    position: relative;
+    }
+
+.card h4{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+
+.card img{
+    object-fit: cover;
+    width:100%;
+    height:100%;}
+
+
+/* BIO----------- */
+
+.container-flex-bio {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+}
+
+
+
+.bio-img img {
+    max-width: 380px;
+}
+
+
+/* INDEX VIDEO INTRO  ------------ */
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.video-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 100%;
+    /* Ancho del video */
+
+}
+
+.rotulo-index {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rotulo-sub {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-container {
+    text-align: center;
+    position: sticky;
+    top: 80%;
+    left: 35%;
+
+}
+
+/* BOTON SEND FORMULARIO ---------- */
+#submit {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    color: #fff;
+    background-color: #c2bdb2;
+    padding: 10px 22px;
+    border: solid #fcfcfc 0px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 15px;
+    transition: 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#submit:hover {
+
+    transition: 1000ms;
+    padding: 10px 50px;
+    transform: translateY(-0px);
+    background-color: #fff;
+    color: #c2bdb2;
+    border: solid 0px #c2bdb2;
+}
+
+
+/* ---------- */
+
+
+.boton-inicio {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    font-size: 35px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-inicio:hover {
+    background-color: rgba(128, 128, 128, 0.8);
+}
+
+
+/* FORMULARIO ------------ */
 
 .form-intro {
     margin: auto 1.5rem;
@@ -43,6 +277,7 @@ header {
     display: flex;
     flex-direction: column;
     margin: 0 1.5rem;
+    margin-bottom: 20px;
 }
 
 .container-contact h1 {
@@ -83,120 +318,8 @@ header {
     width: 100%;
     height: 500px;
     object-fit: fill;
+    margin-top: 30px;
 }
-
-#img-logo {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-}
-
-/* NAV ------------------------*/
-
-.nav-container{
-    display: flex;
-    overflow: hidden;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 80px;
-    color: #ffffff;
-    background-color: #bbb6aa;
-    margin-bottom: 20px;
-    position:-webkit-sticky;
-    position:sticky;
-    top: 0px;
-
-}
-
-.navlinks {
-    background-color: #bbb6aa;
-    overflow: hidden;
-}
-
-.navlinks a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.navlinks a:hover {
-    background-color:#f2f2f2;
-    color:#536157;
-}
-
-.navlinks a.active {
-    background-color: #aba492;
-    color: white;
-}
-
-.nav-container .social-icons a{
-    display: inline-block;
-    font-size: 20px;
-    margin-top: 15px;
-    
-}
-
-/* NAV ------------------------*/
-
-
-
-/* VIDEO INTRO INDEX ------------ */
-.container {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-   
-    
-}
-
-.video-intro {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    width: 100%; /* Ancho del video */
-
-}
-
-.rotulo-index {
-    font-size: 3rem;
-    color: #ffffff;
-    text-align: center;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.btn-container {
-    text-align: center;
-    position: sticky;
-    top: 80%;
-    left: 35%;
-    
-}
-
-.boton-inicio {
-    background-color:transparent;
-    border: none;
-    color: white;
-    padding: 20px 20px;
-    font-size: 35px;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.boton-inicio:hover {
-    background-color: rgba(128, 128, 128, 0.8);
-}
-
 
 /* BOTON SUBIR ARRIBA contacto ----------------------------*/
 html {
@@ -212,7 +335,7 @@ html {
 /* FOOTER ------------------------*/
 .footer {
     color: #ffffff;
-    background-color:#536157;
+    background-color: #536157;
     padding: 20px 0;
     text-align: center;
 
@@ -254,36 +377,72 @@ html {
 
     .navlinks {
         display: flex;
-        
+
     }
 
     .navlinks a {
-        padding: 10px ;
+        padding: 10px;
     }
-   
+
     .nav-container .social-icons {
-    
-      display: none;
+
+        display: none;
     }
-  }
+}
+
 
 @media screen and (min-width: 481px) {
+   
+    h2{
+        font-size: 30px
+    }
+
+    h4{
+        font-size: 22px
+    }
+
+    p, 
+    label {
+        font-size: 18px;
+    }
+
+    .container-cards {
+    display: flex;
+flex-wrap: nowrap;   
+    }
+   
     .btn-container {
         text-align: center;
         position: sticky;
         top: 80%;
         left: 45%;
-        
+
     }
+
+    .container-flex-bio {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    /* .bio-img img {
+        width: 540px;
+    } */
+
 }
+
+
 
 
 /* 769 */
 @media screen and (min-width:769px) {
+    
+
     .container-contact {
         width: 80%;
         display: grid;
-        grid-template-columns: 3fr 2fr;
+        grid-template-columns: 2.5fr 2fr;
         max-width: 900px;
         margin: 0 auto;
         height: 100vh;

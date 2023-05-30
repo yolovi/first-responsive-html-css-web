@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Komorebi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Tsukimi+Rounded:wght@300&display=swap"
+        rel="stylesheet">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
@@ -13,16 +21,21 @@
 <body>
 
     <header>
+        <div class="img-header">
+
+        </div>
     </header>
 
     <nav class="nav-container">
         <div class="nav-logo">
-            <a href="contacto.html"><h1>KOMOREBI</h1></a>  
+            <a href="home.html">
+                <h1>KOMOREBI</h1>
+            </a>
         </div>
         <div class="navlinks">
             <a href="home.html" class="active">HOME</a>
-            <a href="biografia.html">ABOUT</a>
             <a href="portafolio.html">WORK</a>
+            <a href="biografia.html" >ABOUT</a>
             <a href="contacto.html">CONTACT</a>
         </div>
         <div class="social-icons">
@@ -32,32 +45,47 @@
     </nav>
 
     <main>
-        <h1>Home</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ad temporibus illo blanditiis quos molestiae
-            nesciunt numquam harum! Ipsam necessitatibus odio, numquam minima nemo eveniet hic voluptatibus consectetur
-            magnam illum.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptates culpa officia quaerat
-            cupiditate nisi corporis. Fugit facilis omnis nisi alias eligendi aspernatur animi adipisci corporis,
-            recusandae nesciunt pariatur nam?
-        </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ad temporibus illo blanditiis quos molestiae
-            nesciunt numquam harum! Ipsam necessitatibus odio, numquam minima nemo eveniet hic voluptatibus consectetur
-            magnam illum.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptates culpa officia quaerat
-            cupiditate nisi corporis. Fugit facilis omnis nisi alias eligendi aspernatur animi adipisci corporis,
-            recusandae nesciunt pariatur nam?
-        </p>
+        <section class="container-tex1">
+            <h2>HOME</h2>
+            <h4>Subtitulo</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eos tempore ipsum dolores reiciendis
+                architecto suscipit cupiditate beatae aperiam temporibus minus repellendus dignissimos, nihil blanditiis
+                veniam at nostrum fugit enim.
+            </p>
+        </section>
+
+
+        <section class="container-cards">
+            <div class="card">
+                <h4>WORK</h4>
+                <a href="portafolio.html"><img src="../assets/anna-shvets-work.jpg" alt="foro de anna-shvets. Brazos sobre fondo blanco ">
+                </a>
+            </div>
+            <div class="card">
+                <h4>ABOUT</h4>
+                <a href="biografia.html"> <img src="../assets/anna-shvets-about.jpg" alt="foro de anna-shvets. Brazos sobre fondo blanco ">
+                </a>
+            </div>
+            <div class="card">
+                <h4>CONTACT</h4>
+                <a href="contacto.html"> <img id="img-contact" src="../assets/anna-shvets-contact.jpg" alt="foro de anna-shvets. Brazos sobre fondo blanco ">
+                </a>
+            </div>
+
+        </section>
+
 
     </main>
     <footer class="footer dark">
         <div class="container-footer">
-          <div class="social-icons">
-            <a class="dark" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-            <a class="dark" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-          </div>
-          <p class="rights">Todos los derechos reservados a Yolanda López</p>
+            <div class="social-icons">
+                <a class="dark" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a class="dark" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p class="rights">Todos los derechos reservados a Yolanda López</p>
         </div>
-      </footer>
+    </footer>
 </body>
 
 </html>
