@@ -55,6 +55,55 @@ label {
     justify-content: flex-start;
 } */
 
+/* INDEX VIDEO INTRO  ------------ */
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.video-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 100%;
+    /* Ancho del video */
+
+}
+
+.rotulo-index {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rotulo-sub {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-container {
+    text-align: center;
+    position: sticky;
+    top: 80%;
+    left: 35%;
+
+}
+
 /* NAV ------------------------*/
 .nav-logo a {
     color: #f2f2f2;
@@ -113,6 +162,25 @@ label {
 
 }
 
+/* ---------- */
+
+.boton-inicio {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    font-size: 35px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-inicio:hover {
+    background-color: rgba(128, 128, 128, 0.8);
+}
+
 /* NAV ------------------------*/
 
 
@@ -121,7 +189,11 @@ label {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin: 0 20px;
+    margin: 0 20px 20px;
+}
+
+.scroll{
+    scroll-behavior: smooth;
 }
 
 .container-cards {
@@ -146,7 +218,8 @@ label {
 .card img{
     object-fit: cover;
     width:100%;
-    height:100%;}
+    height:100%;
+}
 
 
 /* BIO----------- */
@@ -160,58 +233,27 @@ label {
 
 
 .bio-img img {
-    max-width: 380px;
+    max-width: 350px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
-
-/* INDEX VIDEO INTRO  ------------ */
-.container {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-
-}
-
-.video-intro {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    width: 100%;
-    /* Ancho del video */
+/* WORK - PORTAFOLIO -------------- */
+.header-work {
+    display: flex;
+    flex-direction: column;
+    margin: 10 0;
 
 }
 
-.rotulo-index {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 3rem;
-    color: #ffffff;
-    text-align: center;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.img-work  {
+    border: 2px solid red;
 }
 
-.rotulo-sub {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 1rem;
-    color: #ffffff;
-    text-align: center;
-    position: absolute;
-    top: 26%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.img-work img {
+    object-fit: cover;
 }
 
-.btn-container {
-    text-align: center;
-    position: sticky;
-    top: 80%;
-    left: 35%;
-
-}
 
 /* BOTON SEND FORMULARIO ---------- */
 #submit {
@@ -241,27 +283,6 @@ label {
     background-color: #fff;
     color: #c2bdb2;
     border: solid 0px #c2bdb2;
-}
-
-
-/* ---------- */
-
-
-.boton-inicio {
-    font-family: 'Nunito Sans', sans-serif;
-    background-color: transparent;
-    border: none;
-    color: white;
-    padding: 20px 20px;
-    font-size: 35px;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.boton-inicio:hover {
-    background-color: rgba(128, 128, 128, 0.8);
 }
 
 
@@ -311,7 +332,6 @@ label {
 
 .container-links {
     display: flex;
-    border: 3px solix red;
 }
 
 .container-links img {
@@ -426,9 +446,10 @@ flex-wrap: nowrap;
         flex-wrap: wrap;
     }
 
-    /* .bio-img img {
-        width: 540px;
-    } */
+    .bio-img {
+        justify-content: center;
+    }
+
 
 }
 
