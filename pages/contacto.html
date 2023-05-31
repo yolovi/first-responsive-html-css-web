@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Tsukimi+Rounded:wght@300&display=swap"
-      rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Tsukimi+Rounded:wght@300&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="../css/main.css">
 </head>
@@ -23,8 +23,10 @@
 
   <nav class="nav-container">
     <div class="nav-logo">
-      <a href="home.html"><h1>KOMOREBI</h1></a>  
-  </div>
+      <a href="home.html">
+        <h1>KOMOREBI</h1>
+      </a>
+    </div>
     <div class="navlinks">
       <a href="home.html">HOME</a>
       <a href="biografia.html">ABOUT</a>
@@ -32,8 +34,8 @@
       <a href="contacto.html" class="active">CONTACT</a>
     </div>
     <div class="social-icons">
-      <a class="dark" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-      <a class="dark" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+      <a class="white" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+      <a class="white" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
     </div>
   </nav>
 
@@ -44,19 +46,18 @@
 
       <form class="my-form" action="" method="post">
         <legend>
-          <h2 class="mb1">Let's talk</h2>
+          <h2>Let's talk</h2>
         </legend>
 
-
-        <div class="campos-column">
+        <div  class="campos-column" >
           <input type="text" name="name" id="name" placeholder="Name" />
           <input type="number" name="age" id="age" placeholder="Age" />
           <input type="email" name="email" id="email" placeholder="Email" />
           <input type="tel" name="tel" id="tel" placeholder="Phone" />
         </div>
 
-        <div class="gender-container">
-          <select>
+        <div>
+          <select class="mb0">
             <option selected disabled>-- Gender --</option>
             <option>Male</option>
             <option>Female</option>
@@ -65,8 +66,8 @@
           </select>
         </div>
 
-        <h4 class="mb1">Hobbies & Interests</h4>
-        <div class="campos-row">
+        <h4>Hobbies & Interests</h4>
+        <div >
           <input type="checkbox" name="Photography" id="Photography" />
           <label for="Photography">Photography</label>
           <input type="checkbox" name="Music" id="Music" />
@@ -75,21 +76,23 @@
           <label for="Books">Books</label>
         </div>
         <div>
-          <h4 class="mb1">What's your story</h4>
-          <textarea id="aboutYou" name="aboutYou" rows="5" cols="33"> Message </textarea>
+          <h4 class="mb0 campos-column" >What's your story</h4>
+          <textarea id="about-you" name="aboutYou" rows="5" cols="33"> Message </textarea>
         </div>
 
+        <div class="mb0">
+          <h4 class="mb0">When do you prefer I contact you</h4>
+          <div class="mb0">
+            <label for="fecha">Select date:</label>
+            <input type="date" id="date" name="date" value="2023-05-23" min="2022-01-01" max="2025-12-31" />
+          </div>
+          <div>
+            <label for="hora">Select hour:</label>
+            <input type="time" id="time" name="time" value="09:00" />
+          </div>
+        </div>
         <div>
-          <h4 class="mb1">When do you prefer I contact you</h4>
-          <label for="fecha">Select date:</label>
-          <input type="date" id="date" name="date" value="2023-05-23" min="2022-01-01" max="2025-12-31" />
-        </div>
-        <div class="mb1">
-          <label for="hora">Select hour:</label>
-          <input type="time" id="time" name="time" value="09:00" />
-        </div>
-        <div class="mb1">
-          <h4 class="mb1">Contact Preference</h4>
+          <h4>Contact Preference</h4>
           <input type="radio" id="contact" name="contact" value="email" />
           <label for="contact">Email</label>
 
@@ -100,7 +103,7 @@
       </form>
 
       <div class="container-links">
-        <img class='img-form' src="../assets/pexels-Foto de Daria Liudnaya -8187500.jpg"
+        <img class='img-form' src="../assets/imagenes/pexels-Foto de Daria Liudnaya -8187500.jpg"
           alt="imagen de manos de mujer. Foto de Daria Liudnaya" />
 
         <!-- <ul>
@@ -114,11 +117,11 @@
 
 
   </main>
-  <footer class="footer dark">
+  <footer class="footer white">
     <div class="container-footer">
       <div class="social-icons">
-        <a class="dark" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-        <a class="dark" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+        <a class="white" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a class="white" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
       </div>
       <p class="rights">Todos los derechos reservados a Yolanda López</p>
     </div>
