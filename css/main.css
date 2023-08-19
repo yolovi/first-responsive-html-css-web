@@ -126,6 +126,7 @@ label {
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
+    z-index: 999;
 }
 
 .nav-logo a {
