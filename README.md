@@ -4,12 +4,12 @@
  <p align="center">
     Simple web page project only using CSS and HTML Mobile First Design
     <br />
-    <a href="https://github.com/yolovi/mi-proyecto-personal"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/yolovi/first-responsive-html-css-web"><strong>Explore the docs »</strong></a>
     <br />
     ·
-    <a href="https://github.com/yolovi/mi-proyecto-personal/issues">Report Bug</a>
+    <a href="https://github.com/yolovi/first-responsive-html-css-web/issues">Report Bug</a>
     ·
-    <a href="https://github.com/yolovi/mi-proyecto-personal/issues">Request Feature</a>
+    <a href="https://github.com/yolovi/first-responsive-html-css-web/issues">Request Feature</a>
   </p>
 </div>
 
