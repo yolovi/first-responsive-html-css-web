@@ -7,16 +7,14 @@
     <a href="https://github.com/yolovi/mi-proyecto-personal"><strong>Explore the docs »</strong></a>
     <br />
     ·
-    <a href="https://github.com/yolovi/mi-proyecto-personal.git/issues">Report Bug</a>
+    <a href="https://github.com/yolovi/mi-proyecto-personal/issues">Report Bug</a>
     ·
-    <a href="https://github.com/yolovi/mi-proyecto-personal.git/issues">Request Feature</a>
+    <a href="https://github.com/yolovi/mi-proyecto-personal/issues">Request Feature</a>
   </p>
 </div>
 
-
-
-
-![GIF](./assets/eCommerce-Animated-GIF.gif)
+</br>
+<span> <img alt="image home web application" src="./assets/readme/Captura de pantalla 2023-09-04 201017.png"> 
 
 
 ### 📌 Requirments & Skills Achieved 
@@ -25,6 +23,7 @@
 - CSS3
 - Mobile First. Addapted to tablet and laptop
 - Different seccions in different html files
+
 
 Minimal seccions:
 - Home
@@ -35,6 +34,11 @@ Minimal seccions:
   Includes some multmimedia, at least images, video, audio
 - Contact
   Includes at least one form
+
+</br>
+
+![GIF](./assets/readme/Recording%202023-09-04%20at%2019.03.05.gif)
+
 
 CSS3:
 - Custom typography
@@ -49,6 +53,10 @@ CSS3:
   Use flex to distribute all the blocks on your page.
 - Mobile first
   Your page must be able to be viewed correctly on mobile, tablet, and desktop. Use everything you've learned about fluid design, flexbox, and media queries to achieve this.
+
+</br>
+
+![GIF](./assets/readme/Recording%202023-09-04%20at%2020.12.45.gif)
 
 ## 🔗 Contributing
 
